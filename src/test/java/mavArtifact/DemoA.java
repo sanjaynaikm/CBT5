@@ -14,7 +14,7 @@ public class DemoA
 {
 	
 	@Test
-	public void testA() throws MalformedURLException
+	public void testA() throws MalformedURLException, InterruptedException
 	{
 		/*
 		URL r = new URL("http://loclahost:4444/wd/hub");
@@ -26,8 +26,9 @@ public class DemoA
 		System.setProperty("webdriver.chrome.driver","./driver/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.flagroot.com");
-		
-		
+		driver.findElement(By.linkText("Contact Us")).click();
+		Thread.sleep(5000);
+		System.out.println("Hello");
 		//driver.get("http://www.facebook.com");
 		
 	}
