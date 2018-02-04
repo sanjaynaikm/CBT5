@@ -3,6 +3,7 @@ package mavArtifact;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -25,6 +26,8 @@ public class DemoA
 		System.setProperty("webdriver.chrome.driver","./driver/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.flagroot.com");
+		driver.findElement(By.linkText("Home"));
+		System.out.println("Hello");
 		//driver.get("http://www.facebook.com");
 		
 	}
