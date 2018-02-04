@@ -29,6 +29,7 @@ public class DemoA
 		driver.findElement(By.linkText("Contact Us")).click();
 		Thread.sleep(5000);
 		System.out.println("Hello");
+		System.out.println("I am adding a new line");
 		//driver.get("http://www.facebook.com");
 		
 	}
