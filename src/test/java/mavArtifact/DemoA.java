@@ -26,8 +26,8 @@ public class DemoA
 		System.setProperty("webdriver.chrome.driver","./driver/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.flagroot.com");
-		driver.findElement(By.linkText("Home"));
-		System.out.println("Hello");
+		
+		
 		//driver.get("http://www.facebook.com");
 		
 	}
